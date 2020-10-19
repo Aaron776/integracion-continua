@@ -14,4 +14,9 @@ public class NumberTest {
 
 
     }
+    @Test
+    public void subtractNumbers(){
+        this.number=new Number(5,3);
+        assertEquals(2,this.number.substractNumbers());
+    }
 }
