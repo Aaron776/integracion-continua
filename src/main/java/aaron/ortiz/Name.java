@@ -1,15 +1,13 @@
 package aaron.ortiz;
 
 public class Name {
-    private String chainCharacters;
-    private int lenght;
     private String word;
-
 
 
     public Name(String word) {
         this.word = word;
     }
+
 
     public String getWord() {
 
@@ -21,47 +19,36 @@ public class Name {
         this.word = word;
     }
 
-    public Name(String chainCharacters, int lenght) {
-        this.chainCharacters = chainCharacters;
-        this.lenght=lenght;
 
 
-    }
-    public String getChainCharacters() {
 
-        return chainCharacters;
+    public int numberOfCharacters() {
+
+        return this.word.length();
     }
 
-    public void setChainCharacters(String chainCharacters) {
+    public String capitalLetters() {
 
-        this.chainCharacters = chainCharacters;
+        return this.word = this.word.toUpperCase();
     }
 
-    public int getLenght() {
+    public String changeWord() {
+        String reverse="";
+        for (int number = this.numberOfCharacters()-1; number >= 0; number--) {
+            reverse=reverse+this.word.charAt(number);
 
-        return lenght;
+        }
+         return reverse;
     }
-
-    public void setLenght(int lenght) {
-
-        this.lenght = lenght;
-    }
-
-
-    public int numberOfCharacters(){
-
-        return this.lenght=this.chainCharacters.length();
-    }
-
-    public String capitalLetters(){
-
-        return this.word=this.word.toUpperCase();
-    }
+}
 
 
 
 
 
-    }
+
+
+
+
 
 
