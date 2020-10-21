@@ -12,6 +12,12 @@ public class NameTest {
         assertEquals(4,this.name.numberOfCharacters());
     }
 
+    @Test
+    public void capitalLetters(){
+        this.name=new Name("carro");
+        assertEquals("CARRO",this.name.capitalLetters());
+    }
+
 
 
 }
