@@ -19,4 +19,10 @@ public class NumberTest {
         this.number=new Number(5,3);
         assertEquals(2,this.number.substractNumbers());
     }
+
+    @Test
+    public void multiplyNumbers(){
+        this.number=new Number(8,6);
+        assertEquals(48,this.number.multiplyNumbers());
+    }
 }

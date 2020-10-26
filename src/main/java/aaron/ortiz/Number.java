@@ -32,5 +32,9 @@ public class Number {
         return this.number1-this.number2;
     }
 
+    public  int multiplyNumbers(){
+        return this.number1*this.number2;
+    }
+
 
 }
